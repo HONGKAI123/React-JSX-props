@@ -7,6 +7,7 @@ function card(props) {
     <div>
       <div className="card">
         <div className="top">
+          <p>{props.id}</p>
         <Name nameof ={props.name} />
           <Image imgof= {props.img}/>
           

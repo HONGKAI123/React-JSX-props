@@ -2,26 +2,18 @@ import React from "react";
 import Card from "./card";
 import contacts from "../contacts";
 import Image from "./image";
+import Getnewcard from './getnewcard'
 
-const getnewcard = (contact) =>{
 
-    return(
-         <div>
-       <Card name ={contact.name} img ={contact.imgURL} 
-       phone= {contact.phone} email = {contact.email}/>
-      
-       </div>
-    )
-
-}
 
 
 function App() {
   return (
     <div>
-       <Image img ='https://tinyurl.com/y4tvq2e4'/>
+     
       <h1 className="heading">My Contacts</h1>
-      {contacts.map(getnewcard)}
+     
+      {contacts.map(Getnewcard)}
 
       {/* <Card
         name={contacts[0].name}
